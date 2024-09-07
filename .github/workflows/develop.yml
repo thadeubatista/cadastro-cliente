@@ -3,7 +3,7 @@ name: Build and Push Docker Image to ECR
 on:
   push:
     branches:
-      - develop  # A pipeline será acionada ao fazer push na branch 'main'
+      - develop  # A pipeline será acionada ao fazer push na branch 'develop'
 
 jobs:
   build:
