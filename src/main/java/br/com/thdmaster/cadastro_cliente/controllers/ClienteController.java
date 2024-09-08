@@ -11,9 +11,7 @@ public class ClienteController {
 
     @GetMapping("/clientes")
     public String obterCliente(){
-        String azInfo = getAvailabilityZone();
-
-        return "cliente 1 " + azInfo;
+        return getAvailabilityZone();
     }
 
     private String getAvailabilityZone() {
@@ -25,7 +23,7 @@ public class ClienteController {
             // You will need to map the response accordingly.
 
             // Example: Assuming the metadata has a field "AvailabilityZone"
-            String az = "us-east-1a"; // Extracted value, placeholder for actual parsing logic
+            String az = "cliente mais metadata " + metadata; // Extracted value, placeholder for actual parsing logic
 
             return az;
         } catch (Exception e) {
